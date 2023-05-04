@@ -25,14 +25,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarColor03">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="forgot-password.php">Forgot Password</a>
-            </li>
-           
-          </ul>
-        </div>
+        
       </div>
     </nav>
 
@@ -55,15 +48,7 @@
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input
-              type="password"
-              name="password"
-              class="form-control form-control-sm"
-              id="password"
-            />
-          </div>
+         
           <button type="submit" name="submit" class="btn btn-danger">
             Login
           </button>
