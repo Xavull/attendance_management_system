@@ -28,7 +28,7 @@
   <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z"/>
   <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z"/>
 </svg>Dashboard</a>
-        <a style="font-size:17px;" href="Employees.php"><svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+        <a style="font-size:17px;" href="#"><svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
   <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
   <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
 </svg>Employees</a>
@@ -50,7 +50,7 @@
 	<div class="main">
 		<nav id="navbar" style=" background-color: rgb(5, 5, 151);" class="navbar navbar-expand-lg ">
 			<div class="container-fluid">
-			  <a class="navbar-brand text-white" href="#">DASHBOARD</a>
+			  <a class="navbar-brand text-white" href="#">Employees</a>
 			  <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
@@ -62,35 +62,7 @@
 			  </div>
 			</div>
 		  </nav>
-		  <div class="container text-center mt-5 m-5">
-			<div class="row align-items-start">
-			  <div class="col">
-				<div class="col-sm-6">
-					<div class="card">
-					  <div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					  </div>
-					</div>
-				  </div>
-			  </div>
-			  <div class="col">
-				<div class="row">
-					<div class="col-sm-6 mb-3 mb-sm-0">
-					  <div class="card">	
-						<div class="card-body">
-						  <h5 class="card-title">Special title treatment</h5>
-						  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						  <a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					  </div>
-					</div>
-					
-				  </div>
-			  </div>
-			 
-			</div>
+		 
 	</div>
 
 	
