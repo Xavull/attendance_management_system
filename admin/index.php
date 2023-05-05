@@ -76,8 +76,7 @@
 				  </div>
 			  </div>
 			  <div class="col">
-				<div class="row">
-					<div class="col-sm-6 mb-3 mb-sm-0">
+				<div class="row">sx
 					  <div class="card">	
 						<div class="card-body">
 						  <h5 class="card-title">Special title treatment</h5>
