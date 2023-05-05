@@ -1,0 +1,39 @@
+	/* Style for the sidebar */
+    .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(5, 5, 151);
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      /* Style for the sidebar links */
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      /* Style for the active sidebar link */
+    
+
+      /* Style for the sidebar on hover */
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      /* Style for the main content */
+      .main {
+        margin-left: 200px; /* Same width as the sidebar */
+        padding: 0px 10px;
+      }
+      #navbar{
+        background-color: rgb(5, 5, 151);
+      }
