@@ -65,8 +65,8 @@
 			  </div>
 			</div>
 		  </nav>
-
-      <div class="card w-75 mb-3 mt-5">
+      <center>
+        <div class="card w-75 mb-3 mt-5">
         <button class="btn btn-primary btn-sm mt-5" style="width:20%; margin-left: 680px;">Add Employee</button>
         <div class="card-body">
           <table class="table caption-top  mt-2 m-5" style="width: 90%;">
