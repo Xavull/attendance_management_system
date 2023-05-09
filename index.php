@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>InvestHood Docs</title>
   </head>
-  <body>
+  <body class="bg-dark bg-gradient">
+   <div class="bg-video">
+       <video autoplay muted loop>
+           <source src="../Videos/Office .mp4" type="video/mp4">
+       </video>
+   </div>
+   <div class="center">
+       <img src="../images/logo.png" class="logo mb-4" style="max-height: 150px;">
     <!-- begiing of navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
