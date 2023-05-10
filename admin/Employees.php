@@ -436,13 +436,14 @@
                             ></button>
                           </div>
                           <div class="modal-body">
-                            <form>
+                            <form action="" method="post"> 
                               <div class="mb-3">
                                 <input
                                   type="text"
                                   class="form-control form-control-sm"
                                   id=""
                                   placeholder="Employee code"
+                                  name="employeecode"
                                 />
                               </div>
                               <div class="mb-3">
@@ -451,6 +452,7 @@
                                   class="form-control form-control-sm"
                                   id=""
                                   placeholder="Firstname"
+                                  name="firstname"
                                 />
                               </div>
                               <div class="mb-3">
