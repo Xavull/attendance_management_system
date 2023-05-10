@@ -127,8 +127,21 @@
             fill-rule="evenodd"
             d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
           /></svg
-        >Task Management</a
-      >
+        >Task Management</a>
+      <a style="font-size: 17px" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          style="margin: 5px"
+          height="16"
+          fill="currentColor"
+          class="bi bi-layout-three-columns"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
+          /></svg
+        >Departments</a>
     </div>
 
     <!-- Main content -->
@@ -168,6 +181,11 @@
       </nav>
 
       <!-- content about clock in -->
+      <center>
+      <div class="container border border-1">
+         <h6>Attendance List</h6>
+      </div>
+      </center>
      
     
     </div>

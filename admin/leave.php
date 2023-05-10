@@ -129,6 +129,20 @@
           /></svg
         >Task Management</a
       >
+      <a style="font-size: 17px" href="#"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        style="margin: 5px"
+        height="16"
+        fill="currentColor"
+        class="bi bi-layout-three-columns"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
+        /></svg
+      >Departments</a>
     </div>
 
     <!-- Main content -->
@@ -139,7 +153,7 @@
         class="navbar navbar-expand-lg"
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">CLOCK IN</a>
+          <a class="navbar-brand text-white" href="#">LEAVE MANAGEMENT</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -179,7 +193,7 @@
                 class="btn btn-info btn-sm"
                 style="width: 150px; margin-left: 400px"
                 data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
+                data-bs-target="#addleave"
               >
                 Add Leave
               </button>
@@ -187,7 +201,7 @@
               <!-- Modal -->
               <div
                 class="modal fade"
-                id="staticBackdrop"
+                id="addleave"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"
@@ -198,7 +212,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                        Modal title
+                        Add Leave
                       </h1>
                       <button
                         type="button"
@@ -207,19 +221,41 @@
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div class="modal-body">...dfdd</div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Understood
-                      </button>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                         
+                          <input type="text" class="form-control form-control-sm" id="" placeholder="Name of leave">
+                         
+                        </div>
+                        <div class="mb-3">
+                         
+                         <input type="text" class="form-control form-control-sm" id=""  placeholder="Description">
+                        
+                       </div>
+                       <div class="mb-3">
+                         
+                       <input type="number" class="form-control form-control-sm" id=""  placeholder="Credits">
+                        
+                       </div>
+                      
+                         
+                         <div class="mb-3">
+                         
+                          <select class="form-control" name="" id="">
+                            <option value="" selected disabled>Intended Employee</option>
+                            <option value="active">Intern</option>
+                          </select>
+                          
+                         </div>
+                         
+                         
+                       
+                        
+                        <button type="submit" class="btn btn-primary">Add Leave</button>
+                      </form>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -245,7 +281,7 @@
                           type="button"
                           class="btn btn-warning btn-sm"
                           data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
+                          data-bs-target="#editleave"
                           data-bs-whatever="@mdo"
                         >
                           <svg
@@ -268,7 +304,7 @@
 
                         <div
                           class="modal fade"
-                          id="exampleModal"
+                          id="editleave"
                           tabindex="-1"
                           aria-labelledby="exampleModalLabel"
                           aria-hidden="true"
@@ -277,7 +313,7 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">
-                                  New message
+                                  Edit Leave
                                 </h5>
                                 <button
                                   type="button"
@@ -289,42 +325,38 @@
                               <div class="modal-body">
                                 <form>
                                   <div class="mb-3">
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Recipient:</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
+                                   
+                                    <input type="text" class="form-control form-control-sm" id="" placeholder="Name of leave">
+                                   
                                   </div>
                                   <div class="mb-3">
-                                    <label
-                                      for="message-text"
-                                      class="col-form-label"
-                                      >Message:</label
-                                    >
-                                    <textarea
-                                      class="form-control"
-                                      id="message-text"
-                                    ></textarea>
-                                  </div>
+                                   
+                                   <input type="text" class="form-control form-control-sm" id=""  placeholder="Description">
+                                  
+                                 </div>
+                                 <div class="mb-3">
+                                   
+                                 <input type="number" class="form-control form-control-sm" id=""  placeholder="Credits">
+                                  
+                                 </div>
+                                
+                                   
+                                   <div class="mb-3">
+                                   
+                                    <select class="form-control" name="" id="">
+                                      <option value="" selected disabled>Intended Employee</option>
+                                      <option value="active">Intern</option>
+                                    </select>
+                                    
+                                   </div>
+                                   
+                                   
+                                 
+                                  
+                                  <button type="submit" class="btn btn-primary">Update Leave</button>
                                 </form>
                               </div>
-                              <div class="modal-footer">
-                                <button
-                                  type="button"
-                                  class="btn btn-secondary"
-                                  data-bs-dismiss="modal"
-                                >
-                                  Close
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                  Send message
-                                </button>
-                              </div>
+                              
                             </div>
                           </div>
                         </div>
@@ -410,7 +442,7 @@
                                   class="modal-title fs-5"
                                   id="staticBackdropLabel"
                                 >
-                                  Modal title
+                                  Employee Code: 1111
                                 </h1>
                                 <button
                                   type="button"
@@ -419,7 +451,14 @@
                                   aria-label="Close"
                                 ></button>
                               </div>
-                              <div class="modal-body">...dddfff</div>
+                              <div class="modal-body">
+                                <strong>Full Names:</strong> Katlego Mashego<br>
+                                <strong>Leave Type:</strong> Annual Leave<br>
+                                <strong>Number of days:</strong> 5<br>
+                                <strong>From:</strong> 18-April-2023<br>
+                                <strong>To:</strong> 22-April-2023<br>
+                                <strong>Reason for leave:</strong> Taking a break<br>
+                              </div>
                               <div class="modal-footer">
                                 <button
                                   type="button"

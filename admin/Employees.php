@@ -74,20 +74,20 @@
         >Employees</a
       >
       <a style="font-size: 17px" href="clockin.php"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          style="margin: 5px"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-bell"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-          /></svg
-        >Leave Management</a
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        style="margin: 5px"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-bell"
+        viewBox="0 0 16 16"
       >
+        <path
+          d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+        /></svg
+      >Clock In</a>
+
       <a style="font-size: 17px" href="leave.php"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -104,8 +104,7 @@
           <path
             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
           /></svg
-        >Leave Management</a
-      >
+        >Leave Management</a>
       <a style="font-size: 17px" href="#"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +141,7 @@
           <path
             d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
           /></svg
-        >Departments</a
-      >
+        >Departments</a>
     </div>
 
     <!-- Main content -->
@@ -193,7 +191,7 @@
             type="button"
             class="btn btn-primary"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#addemp"
             data-bs-whatever="@mdo"
           >
             <svg
@@ -216,7 +214,7 @@
 
           <div
             class="modal fade"
-            id="exampleModal"
+            id="addemp"
             tabindex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
@@ -225,7 +223,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">
-                    New message
+                    Add Employee
                   </h5>
                   <button
                     type="button"
@@ -237,37 +235,72 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Recipient:</label
-                      >
                       <input
                         type="text"
-                        class="form-control"
-                        id="recipient-name"
+                        class="form-control form-control-sm"
+                        id=""
+                        placeholder="Employee code"
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="message-text" class="col-form-label"
-                        >Message:</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="message-text"
-                      ></textarea>
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id=""
+                        placeholder="Firstname"
+                      />
                     </div>
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id=""
+                        placeholder="Lastname"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id=""
+                        placeholder="Phone No"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                        id=""
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-control" name="" id="">
+                        <option value="" selected disabled>
+                          Choose status
+                        </option>
+                        <option value="active">Active</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-control" name="" id="">
+                        <option value="" selected disabled>
+                          Choose Department
+                        </option>
+                        <option value="active">IT</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-control" name="" id="">
+                        <option value="" selected disabled>
+                          Choose Position
+                        </option>
+                        <option value="active">Software Developer</option>
+                      </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Add</button>
                   </form>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Send message
-                  </button>
                 </div>
               </div>
             </div>
@@ -275,7 +308,7 @@
 
           <div class="card-body">
             <table class="table caption-top mt-2 m-5" style="width: 90%">
-              <caption style="font-size: 18px;">
+              <caption style="font-size: 18px">
                 <b>List of Employees</b>
               </caption>
               <thead>
@@ -304,7 +337,7 @@
                       type="button"
                       class="btn btn-success btn-sm"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#viewempl"
                       data-bs-whatever="@mdo"
                     >
                       <svg
@@ -323,7 +356,7 @@
 
                     <div
                       class="modal fade"
-                      id="exampleModal"
+                      id="viewempl"
                       tabindex="-1"
                       aria-labelledby="exampleModalLabel"
                       aria-hidden="true"
@@ -332,7 +365,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
-                              New message
+                              Employee Code : 11111
                             </h5>
                             <button
                               type="button"
@@ -342,29 +375,12 @@
                             ></button>
                           </div>
                           <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label
-                                  for="recipient-name"
-                                  class="col-form-label"
-                                  >Recipient:</label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="recipient-name"
-                                />
-                              </div>
-                              <div class="mb-3">
-                                <label for="message-text" class="col-form-label"
-                                  >Message:</label
-                                >
-                                <textarea
-                                  class="form-control"
-                                  id="message-text"
-                                ></textarea>
-                              </div>
-                            </form>
+                            <strong>Fullname:</strong> Katlego Mashego<br />
+                            <strong>Email:</strong> katlego@investhood.com<br />
+                            <strong>Phone No:</strong> 079 301 6512<br />
+                            <strong>Department:</strong> Information
+                            Technology<br />
+                            <strong>Position:</strong> Software Development<br />
                           </div>
                           <div class="modal-footer">
                             <button
@@ -373,9 +389,6 @@
                               data-bs-dismiss="modal"
                             >
                               Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Send message
                             </button>
                           </div>
                         </div>
@@ -413,7 +426,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
-                              New message
+                              <strong>Employee Code:</strong> 1111
                             </h5>
                             <button
                               type="button"
@@ -425,39 +438,76 @@
                           <div class="modal-body">
                             <form>
                               <div class="mb-3">
-                                <label
-                                  for="recipient-name"
-                                  class="col-form-label"
-                                  >Recipient:</label
-                                >
                                 <input
                                   type="text"
-                                  class="form-control"
-                                  id="recipient-name"
+                                  class="form-control form-control-sm"
+                                  id=""
+                                  placeholder="Employee code"
                                 />
                               </div>
                               <div class="mb-3">
-                                <label for="message-text" class="col-form-label"
-                                  >Message:</label
-                                >
-                                <textarea
-                                  class="form-control"
-                                  id="message-text"
-                                ></textarea>
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm"
+                                  id=""
+                                  placeholder="Firstname"
+                                />
                               </div>
+                              <div class="mb-3">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm"
+                                  id=""
+                                  placeholder="Lastname"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm"
+                                  id=""
+                                  placeholder="Phone No"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <input
+                                  type="email"
+                                  class="form-control form-control-sm"
+                                  id=""
+                                  placeholder="Email address"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <select class="form-control" name="" id="">
+                                  <option value="" selected disabled>
+                                    Choose status
+                                  </option>
+                                  <option value="active">Active</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <select class="form-control" name="" id="">
+                                  <option value="" selected disabled>
+                                    Choose Department
+                                  </option>
+                                  <option value="active">IT</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <select class="form-control" name="" id="">
+                                  <option value="" selected disabled>
+                                    Choose Position
+                                  </option>
+                                  <option value="active">
+                                    Software Developer
+                                  </option>
+                                </select>
+                              </div>
+
+                              <button type="submit" class="btn btn-primary">
+                                Update
+                              </button>
                             </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-secondary"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Send message
-                            </button>
                           </div>
                         </div>
                       </div>
