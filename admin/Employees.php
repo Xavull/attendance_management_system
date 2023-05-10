@@ -506,7 +506,7 @@
                                 </select>
                               </div>
 
-                              <button type="submit" class="btn btn-primary">
+                              <button name="btn" type="submit" class="btn btn-primary">
                                 Update
                               </button>
                             </form>
@@ -546,3 +546,5 @@
     ></script>
   </body>
 </html>
+
+
