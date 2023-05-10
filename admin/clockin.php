@@ -166,6 +166,10 @@
           </div>
         </div>
       </nav>
+
+      <!-- content about clock in -->
+     
+    
     </div>
 
     <script src="../assets/js/script.js"></script>
