@@ -8,19 +8,34 @@
     <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>InvestHood Docs</title>
+
+    <style>
+      .bg-video{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+      .center{
+        position: absolute;
+      }
+    </style>
+
   </head>
-  <body class="bg-dark bg-gradient">
-   <div class="bg-video">
+  <body class="index">
+  <div class="bg-video">
        <video autoplay muted loop>
-           <source src="../Videos/Office .mp4" type="video/mp4">
+           <source src="assets/videos/Office.mp4" type="video/mp4">
        </video>
-   </div>
+ 
+       </div>
    <div class="center">
-       <img src="../images/logo.png" class="logo mb-4" style="max-height: 150px;">
+      
     <!-- begiing of navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
+   
       <div class="container-fluid">
-        <a class="navbar-brand text-danger" href="index.php">InvestHood Docs</a>
+        <a class="navbar-brand text-danger" href="index.php"><img src="assets/images/logo.png" class="logo mb-4" style="max-height: 80px;"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,14 +47,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarColor03">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="forgot-password.php">Forgot Password</a>
-            </li>
-           
-          </ul>
-        </div>
+       
       </div>
     </nav>
 
@@ -77,6 +85,8 @@
         </form>
       </div>
     </center>
+
+    
     <!-- end of login form -->
  
     <!-- beggining of footer -->
