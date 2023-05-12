@@ -127,7 +127,8 @@
             fill-rule="evenodd"
             d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
           /></svg
-        >Task Management</a>
+        >Task Management</a
+      >
       <a style="font-size: 17px" href="#"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +142,8 @@
           <path
             d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
           /></svg
-        >Departments</a>
+        >Departments</a
+      >
     </div>
 
     <!-- Main content -->
@@ -182,12 +184,72 @@
 
       <!-- content about clock in -->
       <center>
-      <div class="container border border-1">
-         <h6>Attendance List</h6>
-      </div>
+        <div class="card mt-5" style="width: 80%">
+          <div class="card-body">
+            <button
+              class="btn btn-success btn-sm"
+              style="margin-left: 1300px; margin-bottom: 10px"
+            >
+              Print
+            </button>
+            <h5>Attendance List</h5>
+            <form style="display: flex" class="mt-5">
+              <select name="" id="" class="form-select" style="width: 150px">
+                <option value="" selected disabled>Employees</option>
+                <option value="">All</option>
+                <option value="">Katlego Mashego</option>
+              </select>
+              <select
+                name=""
+                id=""
+                class="form-select"
+                style="width: 150px; margin-left: 80px"
+              >
+                <option value="" selected disabled>Start date</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+              </select>
+              <select
+                name=""
+                id=""
+                class="form-select"
+                style="width: 150px; margin-left: 80px"
+              >
+                <option value="" selected disabled>End date</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+              </select>
+              <button class="btn btn-info" style="margin-left: 600px">
+                Filter
+              </button>
+            </form>
+          </div>
+          <div class="card mt-5">
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Fullnames</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Katlego Komane</td>
+                    <td>katlego@gmail.com</td>
+                    <td>10:10 20-March-2023</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </center>
-     
-    
     </div>
 
     <script src="../assets/js/script.js"></script>

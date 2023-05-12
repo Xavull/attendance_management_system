@@ -12,7 +12,7 @@
     <style>
       .bg-video{
         position: relative;
-        z-index: 1;
+        
         width: 100%;
         height: 100%;
       }
@@ -23,12 +23,10 @@
 
   </head>
   <body class="index">
-  <div class="bg-video">
        <video autoplay muted loop>
            <source src="assets/videos/Office.mp4" type="video/mp4">
        </video>
  
-       </div>
    <div class="center">
       
     <!-- begiing of navbar -->

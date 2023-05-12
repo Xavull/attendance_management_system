@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -333,7 +335,7 @@
                   <td>Otto</td>
                   <td>email</td>
                   <td>
-                    <button
+                    <a
                       type="button"
                       class="btn btn-success btn-sm"
                       data-bs-toggle="modal"
@@ -352,7 +354,7 @@
                           d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"
                         />
                       </svg>
-                    </button>
+</a>
 
                     <div
                       class="modal fade"
@@ -365,7 +367,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
-                              Employee Code : 11111
+                              Employee Code : 2111
                             </h5>
                             <button
                               type="button"
@@ -375,7 +377,7 @@
                             ></button>
                           </div>
                           <div class="modal-body">
-                            <strong>Fullname:</strong> Katlego Mashego<br />
+                            <strong>Fullname:</strong> katlego Komane<br />
                             <strong>Email:</strong> katlego@investhood.com<br />
                             <strong>Phone No:</strong> 079 301 6512<br />
                             <strong>Department:</strong> Information
@@ -546,5 +548,7 @@
     ></script>
   </body>
 </html>
+
+
 
 
