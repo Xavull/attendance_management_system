@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/js/bootstrap.bundle.min.js" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>InvestHood Docs</title>
   </head>
   <body>
@@ -30,7 +36,7 @@
         <div class="text-center text-danger">Administrator</div>
       </div>
       <hr style="color: #fff" />
-      <a style="font-size: 17px" href="#"
+      <a style="font-size: 17px" href="index.php"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           style="margin: 5px"
@@ -67,7 +73,7 @@
           /></svg
         >Employees</a
       >
-      <a style="font-size: 17px" href="#"
+      <a style="font-size: 17px" href="clockin.php"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           style="margin: 5px"
@@ -123,20 +129,21 @@
           /></svg
         >Task Management</a
       >
-	  <a style="font-size: 17px" href="#"
-	  ><svg
-		xmlns="http://www.w3.org/2000/svg"
-		width="16"
-		style="margin: 5px"
-		height="16"
-		fill="currentColor"
-		class="bi bi-layout-three-columns"
-		viewBox="0 0 16 16"
-	  >
-		<path
-		  d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
-		/></svg
-	  >Departments</a>
+      <a style="font-size: 17px" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          style="margin: 5px"
+          height="16"
+          fill="currentColor"
+          class="bi bi-layout-three-columns"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5H5V1H1.5zM10 15V1H6v14h4zm1 0h3.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H11v14z"
+          /></svg
+        >Departments</a
+      >
     </div>
 
     <!-- Main content -->
@@ -147,7 +154,7 @@
         class="navbar navbar-expand-lg"
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">DASHBOARD</a>
+          <a class="navbar-brand text-white" href="#">CLOCK IN</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -174,41 +181,83 @@
           </div>
         </div>
       </nav>
-      <div class="container text-center mt-5 m-5">
-        <div class="row align-items-start">
-          <div class="col">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+
+      <!-- content about clock in -->
+      <center>
+        <div class="card mt-5" style="width: 80%">
+          <div class="card-body">
+            <button
+              class="btn btn-success btn-sm"
+              style="margin-left: 1300px; margin-bottom: 10px"
+            >
+              Print
+            </button>
+            <h5>Attendance List</h5>
+            <form style="display: flex" class="mt-5">
+              <select name="" id="" class="form-select" style="width: 150px">
+                <option value="" selected disabled>Employees</option>
+                <option value="">All</option>
+                <option value="">Katlego Mashego</option>
+              </select>
+              <select
+                name=""
+                id=""
+                class="form-select"
+                style="width: 150px; margin-left: 80px"
+              >
+                <option value="" selected disabled>Start date</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+              </select>
+              <select
+                name=""
+                id=""
+                class="form-select"
+                style="width: 150px; margin-left: 80px"
+              >
+                <option value="" selected disabled>End date</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+                <option value="20/March/2023">20/March/2023</option>
+              </select>
+              <button class="btn btn-info" style="margin-left: 600px">
+                Filter
+              </button>
+            </form>
           </div>
-          <div class="col">
-            <div class="row">
-              sx
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+          <div class="card mt-5">
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Fullnames</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Katlego Komane</td>
+                    <td>katlego@gmail.com</td>
+                    <td>10:10 20-March-2023</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-      </div>
+      </center>
     </div>
 
     <script src="../assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+ 
