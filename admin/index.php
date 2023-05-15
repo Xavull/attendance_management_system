@@ -123,7 +123,7 @@
           /></svg
         >Task Management</a
       >
-	  <a style="font-size: 17px" href="#"
+	  <a style="font-size: 17px" href="department.php"
 	  ><svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="16"
@@ -192,7 +192,6 @@
           </div>
           <div class="col">
             <div class="row">
-              sx
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>

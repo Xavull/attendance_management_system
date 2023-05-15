@@ -129,7 +129,7 @@
           /></svg
         >Task Management</a
       >
-      <a style="font-size: 17px" href="#"
+      <a style="font-size: 17px" href="department.php"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -154,7 +154,7 @@
         class="navbar navbar-expand-lg"
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">CLOCK IN</a>
+          <a class="navbar-brand text-white" href="#">Tasks</a>
           <button
             class="navbar-toggler"
             type="button"
