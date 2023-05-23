@@ -185,10 +185,11 @@
         <div class="card w-75 mb-3 mt-5">
           <button
             style="
-              width: 100px;
+              width: 190px;
               justify-content: right;
-              margin-left: 700px;
+              margin-left: 1000px;
               margin-top: 50px;
+              position: relative
             "
             type="button"
             class="btn btn-primary"

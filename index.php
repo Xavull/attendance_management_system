@@ -6,26 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-land.css" />
     <title>InvestHood Docs</title>
 
-    <style>
-      .bg-video{
-        position: relative;
-        
-        width: 100%;
-        height: 100%;
-      }
-      .center{
-        position: absolute;
-      }
-    </style>
+
 
   </head>
   <body class="index">
-       <video autoplay muted loop>
-           <source src="assets/videos/Office.mp4" type="video/mp4">
-       </video>
+      
  
    <div class="center">
       
@@ -54,8 +42,11 @@
     <!-- beggining of login form -->
     <center>
       <div
-        style="width:30%; border: 4px solid red; padding: 15px; margin: 20px;"
+        style="width: 30%; border: 4px solid red; padding: 15px; margin: 20px;"
       >
+     <!-- <video autoplay muted loop>
+           <source src="assets/videos/Office.mp4" type="video/mp4">
+       </video> -->
         <form action="" class="mt-5" method="post">
           <h2 class="text-center text-danger">LOGIN HERE</h2>
           <div class="mb-3">

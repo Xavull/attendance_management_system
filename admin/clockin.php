@@ -41,7 +41,7 @@
           xmlns="http://www.w3.org/2000/svg"
           style="margin: 5px"
           width="16"
-          height="16"
+          height="16" 
           fill="currentColor"
           class="bi bi-cast"
           viewBox="0 0 16 16"
@@ -188,7 +188,7 @@
           <div class="card-body">
             <button
               class="btn btn-success btn-sm"
-              style="margin-left: 1300px; margin-bottom: 10px"
+              style="margin-right: 10px; margin-bottom: 10px; width: 100px;"
             >
               Print
             </button>
@@ -223,7 +223,7 @@
                 <option value="20/March/2023">20/March/2023</option>
                 <option value="20/March/2023">20/March/2023</option>
               </select>
-              <button class="btn btn-info" style="margin-left: 600px">
+              <button class="btn btn-info" style="margin-left: 600px; width: 150px;">
                 Filter
               </button>
             </form>
