@@ -37,9 +37,47 @@
     </nav>
     <!-- end of navbar -->
 
+<<<<<<< HEAD
      <!-- beginning of title -->
      <h3 class="text-center text-white mt-5">Investhood IT HR Management System</h3>
     <!-- end of title -->
+=======
+    <!-- beggining of login form -->
+    <center>
+      <div
+        style="width: 30%; border: 4px solid red; padding: 15px; margin: 20px;"
+      >
+     <!-- <video autoplay muted loop>
+           <source src="assets/videos/Office.mp4" type="video/mp4">
+       </video> -->
+        <form action="backend/login.php" class="mt-5" method="post">
+          <h2 class="text-center text-danger">LOGIN HERE</h2>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control form-control-sm"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control form-control-sm"
+              id="password"
+            />
+          </div>
+          <button type="submit" name="submit" class="btn btn-danger">
+            Login
+          </button>
+        </form>
+      </div>
+    </center>
+>>>>>>> f2e7df2973728f83b5533b95372518657152cb0e
 
     <!-- beginning of login form -->
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30%; border: 4px solid red; padding: 15px;">

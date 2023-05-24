@@ -1,5 +1,5 @@
 <?php
 
-   $conn = mysqli_connect("localhost", "root", "", "testempdb");
+   $conn = new mysqli("localhost", "root", "", "investhooddocsdb");
 
 ?>
