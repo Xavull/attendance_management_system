@@ -20,13 +20,12 @@
 
           if($email == $user_email && $password == $user_password){
             $_SESSION["role"] = $role;
+            header("../admin/index.php");
           }else{
             header("index.php");
           }
       }
-      if($_SESSION["role"] == 'admin'){
-         header("../admin/index.php");
-      }
+      
    }
 
    
