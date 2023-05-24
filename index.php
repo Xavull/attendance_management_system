@@ -47,7 +47,7 @@
      <!-- <video autoplay muted loop>
            <source src="assets/videos/Office.mp4" type="video/mp4">
        </video> -->
-        <form action="" class="mt-5" method="post">
+        <form action="backend/login.php" class="mt-5" method="post">
           <h2 class="text-center text-danger">LOGIN HERE</h2>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
