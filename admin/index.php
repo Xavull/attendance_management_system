@@ -1,3 +1,16 @@
+<?php
+session_start();
+ if(!isset($_SESSION['role'])){
+  ?>
+  <script>
+    window.location.href("../index.php");
+  </script>
+  <?php
+ }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,3 +1,47 @@
+<?php
+  require('backend/login.php');
+
+  $data = loginUser();
+
+  if(isset($_POST['submit'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    if($data->num_rows > 0){
+      while($user = mysqli_fetch_assoc($data)){
+        $user_email = $user['empemail'];
+        $user_password = $user['emppassword'];
+        $user_role = $user['emprole'];
+
+        if($email == $user_email && $password == $user_password){
+            $_SESSION['role'] = $user_role;
+        }else{
+          ?>
+          <script>
+            window.location.href="index.php";
+          </script>
+          <?php
+        }
+      }
+    }
+
+    if($_SESSION['role'] == 'admin'){
+      ?>
+      <script>
+      window.location.href = "admin/index.php";
+      </script>
+      <?php
+     
+    }
+    
+  }
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +51,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js" />
   <link rel="stylesheet" href="assets/css/style-land.css" />
+  <script src="assets/js/script.js"></script>
   <title>InvestHood Docs</title>
   <style>
     /* Additional CSS */
@@ -47,7 +92,7 @@
      <!-- <video autoplay muted loop>
            <source src="assets/videos/Office.mp4" type="video/mp4">
        </video> -->
-        <form action="backend/login.php" class="mt-5" method="post">
+        <form action="#" method="post" class="mt-5" id="form">
           <h2 class="text-center text-danger">LOGIN HERE</h2>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
@@ -55,6 +100,7 @@
               type="email"
               name="email"
               class="form-control form-control-sm"
+              id="email"
               id="email"
               aria-describedby="emailHelp"
             />
@@ -66,9 +112,10 @@
               name="password"
               class="form-control form-control-sm"
               id="password"
+              id="password"
             />
           </div>
-          <button type="submit" name="submit" class="btn btn-danger">
+          <button type="submit" id="btn" name="submit" class="btn btn-danger">
             Login
           </button>
         </form>
@@ -80,6 +127,7 @@
     
     <!-- end of login form -->
   </div>
+
 </body>
 </html>
 
