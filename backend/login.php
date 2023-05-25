@@ -1,37 +1,15 @@
-<?php
-
- require("config.php");
+<?php 
+ 
+ require('config.php');
 
  session_start();
 
- if(isset($_POST["submit"])){
-   $email = $_POST["email"];
-   $password = $_POST["password"];
+  function loginUser(){
+    require('config.php');
+    $getData = "SELECT * FROM employee";
+    return  mysqli_query($conn, $getData);
 
-
-   $query = "SELECT * FROM employee";
-   $results = mysqli_query($conn, $query);
-
-   if($results->num_rows > 0){
-      while($row = mysqli_fetch_assoc($results)){
-          $user_email = $row["empemail"];
-          $user_password = $row["emppassword"];
-          $role = $row["emprole"];
-
-          if($email == $user_email && $password == $user_password){
-            $_SESSION["role"] = $role;
-            header("../admin/index.php");
-          }else{
-            header("index.php");
-          }
-      }
-      
-   }
-
-   
-}
-
- 
+  }
 
 
 ?>
